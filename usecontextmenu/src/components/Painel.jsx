@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 
 const Painel = () => {
@@ -10,7 +10,7 @@ const Painel = () => {
     }, []);
 
     return (
-        <div className="panel" >
+        <div className="panel">
             <p>{isContextMenuOpen ? "Aberto" : "fechado"}</p>
         </div>
     );
