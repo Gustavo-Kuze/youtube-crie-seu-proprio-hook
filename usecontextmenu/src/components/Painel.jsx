@@ -10,9 +10,12 @@ const Painel = () => {
     }, []);
 
     return (
+        <>
         <div className="panel">
+        <h1>Painel</h1>
             <p>{isContextMenuOpen ? "Aberto" : "fechado"}</p>
         </div>
+        </>
     );
 };
 

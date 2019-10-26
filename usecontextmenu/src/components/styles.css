@@ -20,3 +20,7 @@ div.panel {
   align-items: center;
   justify-content: center;
 }
+
+.texto {
+  padding: 0 50px;
+}
