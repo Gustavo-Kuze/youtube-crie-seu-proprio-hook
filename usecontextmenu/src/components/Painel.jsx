@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./styles.css";
+import useContextMenuState from "../hooks/useContextMenuState";
 
 const Painel = () => {
-    const [isContextMenuOpen, setIsContextMenuOpen] = useState(false);
-
-    useEffect(() => {
-        document.oncontextmenu = () => setIsContextMenuOpen(true);
-        window.onclick = () => setIsContextMenuOpen(false);
-    }, []);
+    const isContextMenuOpen = useContextMenuState(false);
 
     return (
         <>
