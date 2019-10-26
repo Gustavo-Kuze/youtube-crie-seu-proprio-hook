@@ -3,7 +3,7 @@ import "./styles.css";
 import useContextMenuState from "../hooks/useContextMenuState";
 
 const Sobre = () => {
-    const isContextMenuOpen = useContextMenuState(true);
+    const isContextMenuOpen = useContextMenuState(false);
 
     return (
         <div>
